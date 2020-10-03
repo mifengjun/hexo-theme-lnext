@@ -43,10 +43,10 @@ custom_logo: #/images/L.jpg #/uploads/custom-logo.jpg
 
 # 站点图标
 favicon:
-  small: /images/lvgo.png
-  medium: /images/lvgo.png
-  apple_touch_icon: /images/lvgo.png
-  safari_pinned_tab: /images/lvgo.png
+  small: /siteimages/L.png
+  medium: /siteimages/L.png
+  apple_touch_icon: /siteimages/L.png
+  safari_pinned_tab: /siteimages/L.png
 #  android_manifest: /images/manifest.json
 #  ms_browserconfig: /images/browserconfig.xml
 
@@ -116,7 +116,7 @@ sidebar:
 # 头像
 avatar:
   # Replace the default image and set the url here.
-  url: /images/L.png
+  url: /siteimages/L.png
   # 圆形
   rounded: false
   # 旋转

@@ -1,0 +1,268 @@
+// 关于我页面
+#about {
+  text-align center;
+  color: white;
+  padding: 30px;
+  background-image: url('/siteimages/rmch2.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body {
+  background-image: url("/siteimages/rmch2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+// 选中字体时颜色
+::selection {
+  background: #ff2a2a;
+  color: #eee;
+}
+
+.btn:hover {
+  background: #3f79e5;
+  border-color: #3f79e5;
+}
+
+.btn {
+  color: #1a4ba7;
+  border-color: #3f79e5;
+}
+
+.menu .menu-item .badge {
+  background: #3f79e5;
+}
+
+.pagination .page-number.current {
+  background: #3f79e5;
+  border-color: #3f79e5;
+}
+
+
+.back-to-top:hover {
+  //color #4791ffd9;
+}
+
+.headband {
+  height 0;
+}
+
+
+.site-author-image {
+  border: 0;
+}
+
+// 字体颜色
+//   color: darkblue;
+// 文章主要文字
+.post-block {
+  color: black;
+}
+
+// 主页摘要字体颜色
+.index .post-block .post-body {
+  color: #3f79e5;
+}
+
+// title 渐变
+.site-brand-container {
+  background-image: linear-gradient(#1d4175, #3f79e5);
+}
+
+// 文章目录
+// 鼠标悬停
+.sidebar-nav li:hover {
+  color: #ff2a2a;
+}
+
+.sidebar-toc-active .sidebar-nav-toc,
+.sidebar-overview-active .sidebar-nav-overview {
+  border-bottom-color: #ff2a2a;
+  color: #ff2a2a;
+}
+
+// 当前选中
+.sidebar-toc-active .sidebar-nav-toc:hover,
+.sidebar-overview-active .sidebar-nav-overview:hover {
+  color: #ff2a2a;
+}
+
+// 高亮当前目录
+.post-toc .nav .active > a {
+  border-bottom-color: #ff2a2a;
+  color: #ff2a2a;
+}
+
+// 待选择目录
+.post-toc .nav .active-current > a {
+  color: #3f79e5;
+}
+
+.back-to-top:hover {
+  color: #ff2a2a;
+}
+
+a:hover, span.exturl:hover {
+  border-bottom-color: #ff2a2a;
+  color: #ff2a2a;
+}
+
+a, span.exturl {
+  border-bottom: 1px solid #3f79e5;
+  color: #3f79e5;
+  outline: 0;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  cursor: pointer;
+}
+
+// 字体颜色
+.site-author-name,
+.site-state-item-name,
+.tag-cloud-title,
+.category-all-title,
+.posts-expand .post-title-link,
+.post-header,
+.collection-year,
+.collection-title,
+.posts-collapse .post-content .post-header,
+.posts-collapse .post-content .post-title a,
+.posts-collapse .post-content .post-title span.exturl {
+  color: #3f79e5;
+}
+
+.site-state-item-name:hover,
+.posts-expand .post-title-link:hover,
+.posts-expand .post-title-link::before,
+.posts-collapse .post-content .post-title a:hover {
+  color: #ff2a2a;
+}
+
+// 归档页圆点
+.posts-collapse .post-content .collection-year::before,
+.posts-collapse .post-content .collection-title::before,
+.posts-collapse .post-content .post-header::before {
+  background: #3f79e5;
+}
+
+.posts-expand .post-title-link::before {
+  background: #ff2a2a;
+}
+
+.posts-collapse .post-content .post-header:hover::before {
+  background: #3f79e5;
+}
+
+// 标题下浪线
+.posts-collapse .post-content .post-header {
+  border-bottom: 1px dashed #3f79e5;
+}
+
+.posts-collapse .post-content .post-header:hover {
+  border-bottom-color: #3f79e5;
+}
+
+/*
+ 站点副标题 : .site-subtitle
+ 站点描述: .site-description
+ 二级页副标题: .posts-collapse .post-content .collection-header small
+ 文章副标题: .posts-expand .post-meta-container
+ */
+.site-description,
+.site-subtitle,
+.posts-collapse .post-content .collection-header small,
+.posts-expand .post-meta-container {
+  color: #8193c2;
+}
+
+// 文章中图片描述字体
+.post-body .image-caption {
+  color: #3f79e5;
+  margin: 0 auto 15px;
+}
+
+
+
+// 毛玻璃
+
+.header-inner,
+.sidebar-inner,
+.footer,
+.main-inner > .sub-menu,
+.main-inner > .post-block,
+.main-inner > .tabs-comment,
+.main-inner > .comments,
+.main-inner > .pagination {
+  background: none;
+}
+
+.comments,
+.pagination,
+.main-menu,
+.sidebar-inner,
+.post-block {
+  -webkit-filter: blur(0);
+  -moz-filter: blur(0);
+  -ms-filter: blur(0);
+  -o-filter: blur(0);
+  filter: blur(0);
+  z-index: 1;
+}
+
+.footer {
+  color: white;
+}
+
+.main-menu:after,
+.comments:after,
+.pagination:after,
+.sidebar-inner:after,
+.post-block:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
+// 圆角
+.main-menu:after,
+.comments:after,
+.pagination:after,
+.sidebar-inner:after,
+.post-block:after {
+  border-radius: 5px;
+}
+
+/*{
+  background-image: url(xxx.jpg);
+background-position: center top;
+background-size: cover;
+background-attachment: fixed;
+-webkit-filter: blur(20px);
+-moz-filter: blur(20px);
+-ms-filter: blur(20px);
+-o-filter: blur(20px);
+filter: blur(20px);
+}*/
+
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 15px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #4791ffd9;
+  border-radius: 500px;
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
