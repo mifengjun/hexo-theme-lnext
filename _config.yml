@@ -1,34 +1,24 @@
-# ===============================================================
-# It's recommended to use Alternate Theme Config to configure NexT
-# Modifying this file may result in merge conflict
-# See: https://theme-next.js.org/docs/getting-started/configuration
-# ===============================================================
 
-# ---------------------------------------------------------------
-# Theme Core Configuration Settings
-# See: https://theme-next.js.org/docs/theme-settings/
-# ---------------------------------------------------------------
-
-# Allow to cache content generation. Introduced in NexT v6.0.0.
+# 允许缓存内容生成。 Introduced in NexT v6.0.0.
 cache:
   enable: true
 
-# Remove unnecessary files after hexo generate.
+# hexo生成后删除不必要的文件。
 minify: false
 
-# Define custom file paths.
-# Create your custom files in site directory `source/_data` and uncomment needed files below.
+# 定义自定义文件路径。
+# 创建自定义网站目录中的文件/数据来源和取消需要下面的文件。;
 custom_file_path:
-#head: source/_data/head.njk
-#header: source/_data/header.njk
-#sidebar: source/_data/sidebar.njk
-#postMeta: source/_data/post-meta.njk
-#postBodyEnd: source/_data/post-body-end.njk
-#footer: source/_data/footer.njk
-#bodyEnd: source/_data/body-end.njk
-#variable: source/_data/variables.styl
-#mixin: source/_data/mixins.styl
-#style: source/_data/styles.styl
+  #head: source/_data/head.njk
+  #header: source/_data/header.njk
+  #sidebar: source/_data/sidebar.njk
+  #postMeta: source/_data/post-meta.njk
+  #postBodyEnd: source/_data/post-body-end.njk
+  #footer: source/_data/footer.njk
+  #bodyEnd: source/_data/body-end.njk
+  #variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -36,10 +26,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
 darkmode: false
@@ -48,17 +38,17 @@ darkmode: false
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
+# 自定义徽标(警告:不支持 Mist)
+custom_logo: #/images/L.jpg #/uploads/custom-logo.jpg
 
+# 站点图标
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
-  #android_manifest: /images/manifest.json
-  #ms_browserconfig: /images/browserconfig.xml
-
-# Custom Logo (Warning: Do not support scheme Mist)
-custom_logo: #/uploads/custom-logo.jpg
+  small: /images/lvgo.png
+  medium: /images/lvgo.png
+  apple_touch_icon: /images/lvgo.png
+  safari_pinned_tab: /images/lvgo.png
+#  android_manifest: /images/manifest.json
+#  ms_browserconfig: /images/browserconfig.xml
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
@@ -67,8 +57,8 @@ custom_logo: #/uploads/custom-logo.jpg
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  sidebar: false
-  post: false
+  sidebar: true
+  post: true
   language:
 
 
@@ -81,19 +71,19 @@ creative_commons:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-#home: / || fa fa-home
-#about: /about/ || fa fa-user
-#tags: /tags/ || fa fa-tags
-#categories: /categories/ || fa fa-th
-#archives: /archives/ || fa fa-archive
-#schedule: /schedule/ || fa fa-calendar
-#sitemap: /sitemap.xml || fa fa-sitemap
-#commonweal: /404/ || fa fa-heartbeat
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  #  schedule: /schedule/ || fa fa-calendar
+  #  sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -123,40 +113,42 @@ sidebar:
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
 
-# Sidebar Avatar
+# 头像
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
-  # If true, the avatar will be dispalyed in circle.
+  url: /images/L.png
+  # 圆形
   rounded: false
-  # If true, the avatar will be rotated with the cursor.
-  rotated: false
+  # 旋转
+  rotated: true
 
 # Posts / Categories / Tags in sidebar.
 site_state: true
 
-# Social Links
+# 社交链接 Social Links
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-#GitHub: https://github.com/yourname || fab fa-github
-#E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-#Weibo: https://weibo.com/yourname || fab fa-weibo
-#Google: https://plus.google.com/yourname || fab fa-google
-#Twitter: https://twitter.com/yourname || fab fa-twitter
-#FB Page: https://www.facebook.com/yourname || fab fa-facebook
-#StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
-#YouTube: https://youtube.com/yourname || fab fa-youtube
-#Instagram: https://instagram.com/yourname || fab fa-instagram
-#Skype: skype:yourname?call|chat || fab fa-skype
+  GitHub: https://github.com/lvgocc || fab fa-github
+  E-Mail: mailto:lvgorice@gmail.com || fa fa-envelope
+  RSS: /atom.xml || fa fa-rss
+  #Weibo: https://weibo.com/2475178231 || fab fa-weibo
+  #Google: https://plus.google.com/yourname || fab fa-google
+  #Twitter: https://twitter.com/yourname || fab fa-twitter
+  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+  #YouTube: https://youtube.com/yourname || fab fa-youtube
+  #Instagram: https://instagram.com/yourname || fab fa-instagram
+  #Skype: skype:yourname?call|chat || fab fa-skype
 
+# 社交图标
 social_icons:
   enable: true
   icons_only: false
   transition: false
 
-# Blog rolls
+# 友链 Blog rolls
 links_settings:
   icon: fa fa-globe
   title: Links
@@ -166,12 +158,13 @@ links_settings:
 links:
 #Title: https://example.com
 
+# 文章内目录
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
 toc:
   enable: true
   # Automatically add list number to toc.
-  number: true
+  number: false
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
@@ -199,19 +192,19 @@ language_switcher: false
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  #since: 2015
+  since: 2018
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
-    name: fa fa-heart
+    name: fas fa-beer #fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#ff0000"
+    color: "#fff" # "#4791ffd9"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
-  copyright:
+  copyright: lvgo for the dream
 
   # Powered by Hexo & NexT
   powered: true
@@ -253,10 +246,17 @@ post_meta:
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
   separated_meta: true
-  item_text_total: false
+  #文章中的显示是否显示文字（本文字数|阅读时长）
+  item_text_post: true
+  #网页底部的显示是否显示文字（站点总字数|站点阅读时长）
+  item_text_total: true
+  # Average Word Length (chars count in word)
+  awl: 4
+  # Words Per Minute
+  wpm: 275
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (unsupport animation).
@@ -278,7 +278,7 @@ follow_me:
 #Twitter: https://twitter.com/username || fab fa-twitter
 #Telegram: https://t.me/channel_name || fab fa-telegram
 #WeChat: /images/wechat_channel.jpg || fab fa-weixin
-#RSS: /atom.xml || fa fa-rss
+#  RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -359,24 +359,30 @@ codeblock:
     light: prism
     dark: prism-dark
   # Add copy button on codeblock
+  highlight_theme: normal
   copy_button:
-    enable: false
+    enable: true
+    # Show text copy result.
+    show_result: true
     # Available values: default | flat | mac
-    style:
+    style: mac
+
+# 取消滚动至更多处
+scroll_to_more: false
 
 back2top:
   enable: true
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
-  color: "#37c6c0"
+  color: "#4791ff"
   height: 3px
 
 # Bookmark Support
@@ -391,7 +397,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/lvgocc
   title: Follow me on GitHub
 
 
@@ -464,7 +470,7 @@ exturl: false
 
 # Google Webmaster tools verification.
 # See: https://www.google.com/webmasters
-google_site_verification:
+google_site_verification: sV9GoccAvPsX-CXyXEeaUzDEvk4d77Ca-eoFKT5-2RM
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmaster
@@ -476,10 +482,10 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: code-jxb3G2xK9c
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -513,7 +519,7 @@ pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox
-fancybox: false
+fancybox: true
 
 # A JavaScript library for zooming images like Medium.
 # Warning: Do not enable both `fancybox` and `mediumzoom`.
@@ -627,12 +633,12 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
 gitalk:
-  enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  enable: true
+  github_id: lvgocc # GitHub repo owner
+  repo: gitalk # Repository name to store issues
+  client_id:  # GitHub Application Client ID
+  client_secret:  # GitHub Application Client Secret
+  admin_user: lvgo # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
@@ -699,13 +705,13 @@ leancloud_visitors:
 firestore:
   enable: false
   collection: articles # Required, a string collection name to access firestore database
-  apiKey: # Required
-  projectId: # Required
+  apiKey: AIzaSyBhBkoRC-SxsgPt0y0ZfAZVPpCLCkXfl1c
+  projectId: lvgoblog
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
@@ -729,7 +735,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -779,7 +785,7 @@ note:
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   style: simple
-  icons: false
+  icons: true
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
@@ -801,7 +807,7 @@ pdf:
 
 # Mermaid tag
 mermaid:
-  enable: false
+  enable: falste
   # Available themes: default | dark | forest | neutral
   theme: forest
 
@@ -814,7 +820,7 @@ mermaid:
 # For more information: https://animate.style
 motion:
   enable: true
-  async: false
+  async: true
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
     post_block: fadeIn
@@ -827,7 +833,7 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/rstacruz/nprogress
 nprogress:
-  enable: false
+  enable: true
   spinner: true
 
 # Canvas ribbon
