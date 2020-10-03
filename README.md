@@ -1,6 +1,6 @@
 ## lnext 蓝色调主题版本
 
-https://github.com/lvgocc/hexo-theme-lnext
+Next 项目地址 : https://github.com/lvgocc/hexo-theme-lnext
 
 ## 效果图
 
