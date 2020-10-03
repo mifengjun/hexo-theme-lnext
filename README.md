@@ -5,13 +5,16 @@ Next 项目地址 : https://github.com/lvgocc/hexo-theme-lnext
 ## 效果图
 
 ### 首页
-![首页](lvgoimage/2020-10-03 170811.png)
+
+![首页](lvgoimage/2020-10-03170811.png)
 
 ### about页
-![](lvgoimage/2020-10-03%20131740.png)
+
+![](lvgoimage/2020-10-03131740.png)
 
 ### 归档页
-![](lvgoimage/2020-10-03%20131832.png)
+
+![](lvgoimage/2020-10-03131832.png)
 
 
 ## 调整说明
@@ -27,7 +30,5 @@ Next 项目地址 : https://github.com/lvgocc/hexo-theme-lnext
 对于其中引用的路径图片等可自行创建目录选择图片. 如果你觉得还不错的话, 欢迎使用, 给个 star ⭐
 
 ## 个人博客
-
-https://lvgocc.github.io
 
 http://lvgo.org

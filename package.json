@@ -35,8 +35,6 @@
     "stylint": "2.0.0"
   },
   "husky": {
-    "hooks": {
-
-    }
+    "hooks": {}
   }
 }
