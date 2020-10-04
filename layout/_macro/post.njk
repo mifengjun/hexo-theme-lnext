@@ -71,7 +71,9 @@
           {%- endif %}
           <!--/noindex-->
         {% elif post.excerpt %}
-          {{ post.excerpt }}
+          <!-- 主页扩展信息可点击处理-->
+          <a class="post-excerpt" href="{{ url_for(post.path) }}" ></a>
+          {{post.excerpt}}
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">
