@@ -57,7 +57,7 @@ favicon:
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
 creative_commons:
   license: by-nc-sa
-  sidebar: true
+  sidebar: false
   post: true
   language: zh-CN
 
@@ -145,7 +145,7 @@ social:
 # 社交图标
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # 友链 Blog rolls
@@ -181,6 +181,11 @@ chat:
   icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
   text: Chat # Button text, change it as you wish.
 
+# special 专题栏目
+special:
+  enable: true
+  columns: # 栏目标题 || 栏目描述 || 自定义栏目地址 默认为对应标签地址 || 栏目图标
+    - 设计模式专栏 || 常用的23种设计模式专栏，内容学习整理网络资源，涉及内容出处在文中会有标识。 || || /siteimages/sjms.svg
 
 # ---------------------------------------------------------------
 # Footer Settings
@@ -318,6 +323,10 @@ tagcloud:
   amount: 200 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order
+
+# 自定义标签云, 需 hexo-tag-cloud 支持
+custome_tagcloud:
+  enable: false
 
 # Google Calendar
 # Share your recent schedule to others via calendar page.

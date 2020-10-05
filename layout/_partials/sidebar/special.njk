@@ -1,0 +1,18 @@
+<div id="special">
+      <div id="title">专题栏目</div>
+      {%- for tag in theme.special.columns %}
+        {%- set title = tag.split('||')[0] | trim %}
+        {%- set excerpt = tag.split('||')[1] | trim %}
+        {%- set path = tag.split('||')[2] | trim %}
+        {%- set img = tag.split('||')[3] | trim %}
+        {%- if path == '' %}
+          {%- set path = 'tags/' + title %}
+        {%- endif %}
+        <a href="{{url_for(path)}}">
+          <div class="special_column" style="background-image:url({{img}})">
+            {{ title }}
+            <p>{{excerpt}}</p>
+          </div>
+        </a>
+      {%- endfor %}
+</div>
