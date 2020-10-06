@@ -43,10 +43,10 @@ custom_logo: #/images/L.jpg #/uploads/custom-logo.jpg
 
 # 站点图标
 favicon:
-  small: /siteimages/L.png
-  medium: /siteimages/L.png
-  apple_touch_icon: /siteimages/L.png
-  safari_pinned_tab: /siteimages/L.png
+  small: /images/L.png
+  medium: /images/L.png
+  apple_touch_icon: /images/L.png
+  safari_pinned_tab: /images/L.png
 #  android_manifest: /images/manifest.json
 #  ms_browserconfig: /images/browserconfig.xml
 
@@ -116,7 +116,7 @@ sidebar:
 # 头像
 avatar:
   # Replace the default image and set the url here.
-  url: /siteimages/L.png
+  url: /images/L.png
   # 圆形
   rounded: false
   # 旋转
@@ -185,7 +185,7 @@ chat:
 special:
   enable: true
   columns: # 栏目标题 || 栏目描述 || 自定义栏目地址 默认为对应标签地址 || 栏目图标
-    - 设计模式专栏 || 常用的23种设计模式专栏，内容学习整理网络资源，涉及内容出处在文中会有标识。 || /tags/设计模式 || /siteimages/sjms.svg
+    - 设计模式专栏 || 常用的23种设计模式专栏，内容学习整理网络资源，涉及内容出处在文中会有标识。 || /tags/设计模式 ||
 
 # ---------------------------------------------------------------
 # Footer Settings
@@ -267,13 +267,13 @@ tag_icon: true
 # Front-matter variable (unsupport animation).
 reward_settings:
   # If true, a donate button will be displayed in every article by default.
-  enable: false
-  animation: false
-  #comment: Buy me a coffee
+  enable: true
+  animation: true
+#  comment: Buy me a coffee
 
 reward:
-#wechatpay: /images/wechatpay.png
-#alipay: /images/alipay.png
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.jpg
 #paypal: /images/paypal.png
 #bitcoin: /images/bitcoin.png
 
@@ -282,7 +282,7 @@ reward:
 follow_me:
 #Twitter: https://twitter.com/username || fab fa-twitter
 #Telegram: https://t.me/channel_name || fab fa-telegram
-#WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  WeChat: /images/qrcode_for_gh_6d8fc35da824_258.jpg || fab fa-weixin
 #  RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
