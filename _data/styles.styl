@@ -1,16 +1,53 @@
+// 左侧边栏专题部分 ===================start==========================
+.special_column {
+  padding 10px;
+  font-size 30px
+  font-weight: bold;
+  margin 0 5px 12px 5px
+  border-radius 5px
+  border: 1px solid #bbc9e4;
+  box-shadow 1px 2px 5px #3f79e5
+  background-repeat: no-repeat;
+}
+
+#special #title {
+  border-radius 5px
+  margin: 12px 0 12px 0;
+  background-color: #3f79e5;
+  color: #fff
+}
+
+.special_column p {
+  color: #6694e5;
+  font-size 12px
+  margin 0
+}
+
+.special_column:hover {
+  color #3f79e5
+  border: 1px solid #3f79e5;
+}
+
+.special_column > a {
+  border-bottom: 0;
+}
+// 左侧边栏专题部分 ===================end==========================
+bg-image = 'https://s1.ax1x.com/2020/10/06/0Nu6yQ.jpg'
 // 关于我页面
 #about {
   text-align center;
   color: white;
   padding: 30px;
-  background-image: url('/images/rmch2.jpg');
+  background-image: url(bg-image);
+  //background-image: url('/siteimages/rmch2.jpg');
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
 }
 
 body {
-  background-image: url("/images/rmch2.jpg");
+  background-image: url(bg-image);
+  //background-image: url("/siteimages/rmch2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -41,9 +78,13 @@ body {
   border-color: #3f79e5;
 }
 
+.back-to-top {
+  color: #3f79e5;
+  background: #fff;
+}
 
-.back-to-top:hover {
-  //color #4791ffd9;
+.back-to-top.back-to-top-on {
+  margin-top: 0;
 }
 
 .headband {
@@ -62,7 +103,7 @@ body {
   color: black;
 }
 
-// 主页摘要字体颜色
+// 主页字体颜色
 .index .post-block .post-body {
   color: #3f79e5;
 }
@@ -73,7 +114,27 @@ body {
 }
 
 .index .post-block .post-header {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.post-body {
+  position relative;
+}
+
+// 首页点击扩展信息区域跳转到文章详情
+.post-excerpt:before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -40px;
+  right: -40px;
+  bottom: -20px;
+}
+
+.post-block:hover:after {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow 5px 5px 20px #3f79e5
+  border 1px solid #3f79e5
 }
 
 // title 渐变
@@ -108,10 +169,6 @@ body {
 // 待选择目录
 .post-toc .nav .active-current > a {
   color: #3f79e5;
-}
-
-.back-to-top:hover {
-  color: #ff2a2a;
 }
 
 a:hover, span.exturl:hover {
@@ -184,7 +241,7 @@ a, span.exturl {
 .site-subtitle,
 .posts-collapse .post-content .collection-header small,
 .posts-expand .post-meta-container {
-  color: #8193c2;
+  color: #6694e5;
 }
 
 // 文章中图片描述字体
@@ -195,7 +252,6 @@ a, span.exturl {
 
 
 // 毛玻璃
-
 .header-inner,
 .sidebar-inner,
 .footer,
@@ -268,10 +324,10 @@ filter: blur(20px);
 
 *::-webkit-scrollbar-thumb {
   background-color: #4791ffd9;
-  border-radius: 500px;
+  border-radius 5px;
 }
 
 *::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #F5F5F5;
+  -webkit-box-shadow: inset 0 0 5px rgba(71, 145, 255, 0.5);
+  border-radius 5px;
 }
